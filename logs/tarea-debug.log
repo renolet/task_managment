@@ -102,3 +102,5 @@
 [25/Jan/2021 22:36:48] DEBUG [views.py][get_queryset][70][tarea-debug] dtDateTo: 2021-01-24 23:59:59
 [25/Jan/2021 22:36:48] DEBUG [views.py][get_queryset][32][tarea-debug] {'guid': 'c0a08a640ce3ac233d7870df3d6f63360f656394d2fa4b509e36884cbce79594'}
 [25/Jan/2021 22:36:48] DEBUG [views.py][get_queryset][84][tarea-debug] generic queryset
+[25/Jan/2021 22:56:34] DEBUG [views.py][get_queryset][32][tarea-debug] {}
+[25/Jan/2021 22:56:34] DEBUG [views.py][get_queryset][84][tarea-debug] generic queryset

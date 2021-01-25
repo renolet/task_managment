@@ -60,3 +60,4 @@
 [25/Jan/2021 22:36:48] INFO [models.py][save][26][tarea-info] Save task
 [25/Jan/2021 22:36:48] INFO [models.py][save][26][tarea-info] Save task
 [25/Jan/2021 22:36:48] INFO [models.py][save][26][tarea-info] Save task
+[25/Jan/2021 22:56:34] INFO [views.py][get_queryset][30][tarea-info] get_queryset
