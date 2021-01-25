@@ -14,8 +14,9 @@
 ## Instalación y uso:
 
 - Clonar el repositorio a una carpeta de proyectos local.
-- .
-- Podes contactarnos en caso que tengas alguna consulta.
+- Migrar la base de datos: docker-compose run web python manage.py migrate
+- Crear un usuario superuser con la instrucción: docker-compose run web python manage.py createsuperuser
+
 
 ## Objetivos:
 
