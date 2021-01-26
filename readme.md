@@ -5,9 +5,15 @@
 
 
 
-## Aspectos Técnicos:
+## Requerimientos:
 
-- Este sistema es un RESTful web service, el cual esta desarrollado en lenguaje Python mediante la framework de Django y el uso fundamental de la herramienta Django REST framework.
+- Python 3.7
+- Django 3.1.5
+- django-filter 2.4.0
+- djangorestframework 3.11.1
+- djangorestframework-timed-auth-token 1.3.0
+- psycopg2-binary 2.8
+- Docker y docker-compose
 
 
 
@@ -16,6 +22,7 @@
 Para poder correr el proyecto es necesario seguir los siguientes pasos:
 
 - Crear un repositorio en donde alojar el proyecto
+- Teniendo instalado Docker y docker-compose ejecutar docker-compose up --build
 - Hacer que el repositorio sea repositorio git mediante la instrucción: git init
 - Clonar el repositorio a una carpeta de proyectos local.
 - Pararse en la rama "master".
@@ -25,6 +32,22 @@ Para poder correr el proyecto es necesario seguir los siguientes pasos:
 - Importar la colección de postman que se encuentra en la carpeta "postman" para poder correr los endpoints.
 - Obtener token del superuser mediante el request que se encuentra en Postman en Account/Account Token. Previamente cambiar los datos de usuario y password por los del usuario recientemente creado.
 - En la carpeta "Tarea" de Postman se encuentran todos los requests necesarios para el llamado a los endpoints correspondientes a Tareas. 
+
+
+## Endpoints:
+
+Todos los endpoint para la gestión de tareas requiere autenticación.
+
+- Crear Token - POST - /api/v1/user/auth/login/
+- Crear Tarea - POST - /api/v1/tareas/
+- Listar todas las tareas - GET - /api/v1/tareas/
+- Listar Tarea por Guid - POST - /api/v1/tareas/[guid]
+- Modificación total de Tarea - PUT - /api/v1/tareas/[guid]
+- Modificación parcial de Tarea- PATCH - /api/v1/tareas/[guid]
+- Eliminar Tarea - DELETE - /api/v1/tareas/[guid]
+- Buscar Tarea por rango de fechas de creación - GET - /api/v1/tareas/search/[YYYY-MM-DD]/[YYYY-MM-DD]
+- Buscar Tarea por texto en Título o Descripción - GET - /api/v1/tareas/search/[TEXT]
+- Buscar Tarea por rango de fechas de creación y por texto en Título o Descripción- GET - /api/v1/tareas/search/[YYYY-MM-DD]/[YYYY-MM-DD]/[TEXT]
 
 
 ## Test:
