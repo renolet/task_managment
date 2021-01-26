@@ -23,7 +23,6 @@ Para poder correr el proyecto es necesario seguir los siguientes pasos:
 
 - Crear un repositorio en donde alojar el proyecto
 - Teniendo instalado Docker y docker-compose ejecutar docker-compose up --build
-- Hacer que el repositorio sea repositorio git mediante la instrucción: git init
 - Clonar el repositorio a una carpeta de proyectos local.
 - Pararse en la rama "master".
 - Migrar la base de datos: docker-compose run web python manage.py migrate
